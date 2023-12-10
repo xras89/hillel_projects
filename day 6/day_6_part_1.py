@@ -16,8 +16,9 @@ if n > 0:
     sum_2 = sum(matrix[_][n - 1 - _] for _ in range(n))
     print(sum_2, " - Sum / right(top) to left(down)")
 
+    # чтобы в матрице было центральное значение, число должно быть не четное (например 3, 5, 7, 9)
     center_value = matrix[n // 2][n // 2]
-    print(center_value, " - matrix central value")
+    print(center_value, " - Matrix central value")
 
 else:
     print("Wrong input number")
