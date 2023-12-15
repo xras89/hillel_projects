@@ -13,7 +13,7 @@ for months in months_to_pay:
 
     print(f"\nRepayment in {months} months | {years} year(s):")
     print()
-    print(f"{'Month':^10} {'Payment':^10} {'Persent':^10}")
+    print(f"{'Month':^10} {'Payment':^10} {'Persent':^10} {'Total in month':^10}")
 
     monthly_payment = loan_amount / months
 
@@ -23,7 +23,7 @@ for months in months_to_pay:
         balance -= monthly_payment
         balance += interest
 
-        print(f"{i:^10} {monthly_payment:^10.2f} {interest:^10.2f}")
+        print(f"{i:^10} {monthly_payment:^10.2f} {interest:^10.2f} {(monthly_payment+interest):^15.2f}")
 
     print(f"\nCredit body {loan_amount}")
     print(f"Total interest paid: {interest_paid:.2f}")
